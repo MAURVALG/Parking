@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   delete '/sessions' => 'sessions#destroy', as: :logout
 
 
+   resources :tickets
+
+
   root to: 'sessions#welcome'
 end
