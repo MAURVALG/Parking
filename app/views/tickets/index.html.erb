@@ -1,0 +1,19 @@
+<h1>Listing vehicles</h1>
+
+<table>
+  <tr>
+    <th>Plate</th>
+
+  </tr>
+
+  <% @tickets.each do |ticket| %>
+    <tr>
+      <td><%= ticket.plate %></td>
+
+      <td><%= link_to 'Show', ticket_path(ticket) %></td>
+    </tr>
+  <% end %>
+</table>
+
+
+<%=link_to  'New ticket', new_ticket_path %>

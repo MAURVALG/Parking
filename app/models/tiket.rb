@@ -1,2 +1,0 @@
-class Tiket < ApplicationRecord
-end
